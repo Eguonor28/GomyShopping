@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sanchez:ital@0;1&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sanchez:ital@0;1&family=Truculenta:opsz,wght@12..72,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+}
+.header {
+  display: flex;
+}
+.masco_logo {
+  width: 80px;
+}
+.masco_logo_container {
+  display: flex;
+  align-items: center;
+}
+.masco_logo_container p {
+  font-family: "Truculenta", sans-serif;
+  font-size: 50px;
+}
+.nav_menu1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 50px;
+}
+.nav_items {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  font-weight: 200px;
+  font-size: 17px;
+  color: black;
+}
+.connect_wallet_btn {
+  padding: 15px 30px;
+  background-color: rgb(76, 76, 177);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+}
+.connect_wallet_btn:hover {
+  padding: 18px 33px;
+  transition: 0.3s;
+}
+.primary_btn {
+  padding: 15px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.primary_btn:hover {
+  margin: 5px;
+  transition: 0.3s;
+}
+.main {
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+.main_primary_btn {
+  background-color: black;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+.main_primary_btn:hover {
+  padding: 18px 43px;
+  transition: 0.3s;
+}
+.main h1 {
+  padding: 50px;
+  font-size: 70px;
+}
+.main > p {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+.main_secondary_btn {
+  background-color: black;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+.main_secondary_btn:hover {
+  padding: 18px 43px;
+  transition: 0.3s;
+}
+.products {
+  border: none;
+  font-size: 18px;
+}
+.main_products {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+img {
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.image_container {
+  box-shadow: 0 4px 8px rgb(134, 131, 131);
+  border-radius: 10px;
+}
+.image_container:hover {
+  margin: 5px;
+  transition: 0.3s;
+}
+.price_discount {
+  background-color: rgb(125, 125, 145);
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 20px;
+}
+.price {
+  color: aliceblue;
+}
+.discount {
+  color: rgb(5, 206, 49);
+}
+.footer {
+  background-color: grey;
+  padding: 20px;
+}
+.contact_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+li {
+  list-style: none;
+}
+li > a:hover {
+  color: rgb(104, 112, 112);
+  transform: 0.3s;
+}
+h2 {
+  font-size: 15px;
+}
+.footer_ul a {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav_items {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .connect_wallet_btn {
+      padding: 10px 20px;
+      font-size: 15px;
+      border: none;
+      border-radius: 20px;
+    }
+    .main_products {
+      padding: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .masco_logo {
+      width: 60px;
+    }
+    .masco_logo_container p {
+      font-size: 30px;
+    }
+    .main h1 {
+      padding: 30px;
+      font-size: 40px;
+    }
+    .primary_btn {
+      display: none;
+    }
+    .main_products {
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+}
