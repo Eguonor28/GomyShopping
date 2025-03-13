@@ -175,7 +175,6 @@ h2 {
     }
     .main_products {
       padding: 20px 0;
-      display: flex;
       flex-wrap: wrap;
     }
     .masco_logo {
@@ -183,6 +182,10 @@ h2 {
     }
     .masco_logo_container p {
       font-size: 30px;
+    }
+    .masco_logo_container {
+      justify-content: space-between;
+      padding: 10px;
     }
     .main h1 {
       padding: 30px;
