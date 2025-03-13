@@ -186,6 +186,7 @@ h2 {
     }
     .nav_menu1 {
       padding: 5px 5px;
+      justify-content: space-between;
     }
     .main h1 {
       padding: 30px;
